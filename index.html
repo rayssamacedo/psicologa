@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; padding-top: 80px; }
+        /* Oculta a seta padrão do summary em alguns navegadores antigos/Safari */
+        summary::-webkit-details-marker { display: none; }
     </style>
     <meta name="description" content="Psicanalista Rayssa Macedo: atendimento online para ansiedade, depressão e burnout. Agende sua sessão de psicoterapia online.">
     <meta name="keywords" content="psicanalista online, psicóloga online, terapia para ansiedade, atendimento clínico online, CRP 11/18543">
@@ -72,46 +74,66 @@
         <p class="mt-4 font-bold text-slate-700 underline">CRP: 11/18543</p>
     </section>
 
-    <!-- NOVA SEÇÃO: ORIENTAÇÕES E DÚVIDAS FREQUENTES -->
+    <!-- NOVA SEÇÃO: ORIENTAÇÕES E DÚVIDAS FREQUENTES (ACORDEÃO) -->
     <section id="orientacoes" class="bg-white py-20 border-t border-slate-100">
-        <div class="max-w-4xl mx-auto px-6">
+        <div class="max-w-3xl mx-auto px-6">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold mb-3">Orientações e Dúvidas</h2>
-                <p class="text-slate-600">Informações importantes sobre o funcionamento das sessões e políticas de atendimento.</p>
+                <p class="text-slate-600">Clique nas perguntas abaixo para ver mais detalhes sobre o funcionamento das sessões.</p>
             </div>
 
-            <div class="space-y-6">
-                <!-- Dúvida 1: Duração -->
-                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                    <h3 class="font-bold text-lg text-indigo-600 mb-2">⏱️ Qual é a duração das sessões?</h3>
-                    <p class="text-slate-600 leading-relaxed">
+            <div class="space-y-4">
+                <!-- Dúvida 1 -->
+                <details class="group bg-slate-50 rounded-2xl border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-bold text-lg text-indigo-600 cursor-pointer list-none p-6 outline-none">
+                        <span class="flex items-center gap-2">⏱️ Qual é a duração das sessões?</span>
+                        <span class="transition duration-300 group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 leading-relaxed mt-[-10px]">
                         Cada sessão de psicoterapia tem duração de 50 minutos. Os atendimentos ocorrem de forma online (por vídeo), em um ambiente virtual sigiloso e seguro, garantindo total privacidade.
-                    </p>
-                </div>
+                    </div>
+                </details>
 
-                <!-- Dúvida 2: Reembolso / Convênio -->
-                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                    <h3 class="font-bold text-lg text-indigo-600 mb-2">📄 Como funciona o reembolso pelo plano de saúde?</h3>
-                    <p class="text-slate-600 leading-relaxed">
+                <!-- Dúvida 2 -->
+                <details class="group bg-slate-50 rounded-2xl border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-bold text-lg text-indigo-600 cursor-pointer list-none p-6 outline-none">
+                        <span class="flex items-center gap-2">📄 Como funciona o reembolso pelo plano de saúde?</span>
+                        <span class="transition duration-300 group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 leading-relaxed mt-[-10px]">
                         O atendimento é particular, mas forneço o recibo/nota fiscal detalhado com todas as informações necessárias (incluindo o CRP) para que você possa solicitar o reembolso junto ao seu convênio médico, caso o seu plano ofereça essa modalidade.
-                    </p>
-                </div>
+                    </div>
+                </details>
 
-                <!-- Dúvida 3: Remarcações e Faltas -->
-                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                    <h3 class="font-bold text-lg text-indigo-600 mb-2">🔄 Posso remarcar ou cancelar uma sessão?</h3>
-                    <p class="text-slate-600 leading-relaxed">
+                <!-- Dúvida 3 -->
+                <details class="group bg-slate-50 rounded-2xl border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-bold text-lg text-indigo-600 cursor-pointer list-none p-6 outline-none">
+                        <span class="flex items-center gap-2">🔄 Posso remarcar ou cancelar uma sessão?</span>
+                        <span class="transition duration-300 group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 leading-relaxed mt-[-10px]">
                         Imprevistos acontecem. Caso precise remarcar, peço que o aviso seja feito com antecedência mínima de 24 horas. Faltas sem aviso prévio ou desmarques em cima da hora não poderão ser repostos sem a cobrança da sessão.
-                    </p>
-                </div>
+                    </div>
+                </details>
 
-                <!-- Dúvida 4: Frequência -->
-                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                    <h3 class="font-bold text-lg text-indigo-600 mb-2">📅 Com qual frequência acontecem os encontros?</h3>
-                    <p class="text-slate-600 leading-relaxed">
+                <!-- Dúvida 4 -->
+                <details class="group bg-slate-50 rounded-2xl border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-bold text-lg text-indigo-600 cursor-pointer list-none p-6 outline-none">
+                        <span class="flex items-center gap-2">📅 Com qual frequência acontecem os encontros?</span>
+                        <span class="transition duration-300 group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 leading-relaxed mt-[-10px]">
                         Geralmente, os atendimentos ocorrem uma vez por semana, em horário fixo, o que garante maior consistência e aproveitamento do processo terapêutico. No entanto, a frequência pode ser ajustada conforme a necessidade clínica.
-                    </p>
-                </div>
+                    </div>
+                </details>
             </div>
         </div>
     </section>
@@ -129,7 +151,7 @@
 
         <div>
             <label class="block text-sm font-medium text-slate-700 mb-1">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="Seu e-mail hier" class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
+            <input type="email" name="email" id="email" placeholder="Seu e-mail aqui" class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
         </div>
 
         <div>
